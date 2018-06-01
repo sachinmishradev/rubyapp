@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auto_no: 1
+  driver_name: MyString
+  driver_mobile_no: MyString
+  driver_address: MyString
+  daily_pay: 1
+  balance: 1
+
+two:
+  auto_no: 1
+  driver_name: MyString
+  driver_mobile_no: MyString
+  driver_address: MyString
+  daily_pay: 1
+  balance: 1

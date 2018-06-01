@@ -1,0 +1,47 @@
+<%= form_with(model: auto, local: true) do |form| %>
+  <% if auto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(auto.errors.count, "error") %> prohibited this auto from being saved:</h2>
+
+      <ul>
+      <% auto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auto_no %>
+    <%= form.number_field :auto_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_name %>
+    <%= form.text_field :driver_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_mobile_no %>
+    <%= form.text_field :driver_mobile_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :driver_address %>
+    <%= form.text_field :driver_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :daily_pay %>
+    <%= form.number_field :daily_pay %>
+  </div>
+
+  <div class="field">
+    <%= form.label :balance %>
+    <%= form.number_field :balance %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
